@@ -4,4 +4,4 @@ node_js:
   - "0.10"
 before_install:
   - "curl -L http://git.io/ejPSng | /bin/sh"
-script: meteor --release PLUGINS-PREVIEW@2 add ecmascript --test 
+script: meteor --test
