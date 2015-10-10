@@ -1,3 +1,8 @@
+sudo: required
 language: node_js
-install: curl https://install.meteor.com | /bin/sh
-script: meteor --test
+node_js:
+  - "0.8"
+  - "0.10"
+before_install:
+  - "curl -L http://git.io/ejPSng | /bin/sh"
+script: meteor --test --release velocity:METEOR@1.1.0.2_2
